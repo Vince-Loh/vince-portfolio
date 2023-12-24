@@ -109,10 +109,11 @@ const Navbar = (props) => {
 							<MenuList style={{ backgroundColor: '#3D7AED' }} >
 								{navigationLinks.map((link) => (
 									<NextLink href={link.href} path={path} key={link.name}>
-										<MenuItem  className="hamburgerOption" as={Link} style={{ color: '#ffffff' }} as={Link}>{link.name}</MenuItem>
+										<MenuItem  as={Link} className="hamburgerOption" style={{ color: '#ffffff' }} > {link.name}</MenuItem>
 									</NextLink>
 								))}
 							</MenuList>
+
 						</Menu>
 					</Box>
 				</Box>

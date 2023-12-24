@@ -1,21 +1,23 @@
 import { Icon } from "@chakra-ui/icons";
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
+import { MdLocalHospital } from "react-icons/md";
+import { GrTestDesktop } from "react-icons/gr";
 import {
+	SiWindows,
+	SiApple,
 	SiAndroid,
 	SiApachekafka,
 	SiApachemaven,
 	SiAzuredevops,
 	SiCplusplus,
+	SiCsharp ,
 	SiCss3,
-	SiDart,
 	SiDjango,
 	SiDocker,
 	SiFirebase,
-	SiFlask,
 	SiFlutter,
 	SiGithub,
-	SiGnubash,
 	SiGooglecloud,
 	SiHeroku,
 	SiHtml5,
@@ -36,9 +38,10 @@ import {
 	SiStorybook,
 	SiTypescript,
 	SiVercel,
-	SiVuedotjs,
+	SiVuedotjs, 
 } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
+import { FaJava, FaComputer } from "react-icons/fa";
+
 
 export const ResumeLogo = ({ children, title, thumbnail, small = false }) => (
 	<Box
@@ -82,101 +85,44 @@ export default function TechStack({ stack }) {
 	);
 }
 
-export const TechBinance = () => {
-	const binanceList = {
-		HTML: SiHtml5,
-		CSS: SiCss3,
-		React: SiReact,
-		Redux: SiRedux,
-		TS: SiTypescript,
-		Storybook: SiStorybook,
-		Postgres: SiPostgresql,
-		Git: SiGithub,
-		Docker: SiDocker,
-	};
-	return <TechStack stack={binanceList} />;
-};
-export const TechThoughtMachine = () => {
-	const tmList = {
-		Python: SiPython,
-		Azure: SiAzuredevops,
-		Kafka: SiApachekafka,
-		Postgres: SiPostgresql,
-		MongoDB: SiMongodb,
-	};
-	return <TechStack stack={tmList} />;
-};
-
-export const TechTanso = () => {
-	const tansoList = {
-		Next: SiNextdotjs,
-		TS: SiTypescript,
-		Prisma: SiPrisma,
-		Storybook: SiStorybook,
-		Azure: SiAzuredevops,
-		Postgres: SiPostgresql,
-		Git: SiGithub,
-		Docker: SiDocker,
-	};
-	return <TechStack stack={tansoList} />;
-};
-
-export const TechDBS = () => {
-	const dbsList = {
-		Java: FaJava,
-		Maven: SiApachemaven,
+export const AutoCoachTech = () => {
+	const  tmCoach = {
+		"C++": SiCplusplus,
+		"C#": SiCsharp,
 		Jira: SiJira,
 		Github: SiGithub,
-		Bash: SiGnubash,
-		Spring: SiSpringboot,
 	};
-	return <TechStack stack={dbsList} />;
+	return <TechStack stack={tmCoach} />;
+};
+export const SwinnyTech = () => {
+	const tmSwin = {
+		Windows: SiWindows,
+		MacOS: SiApple,
+	};
+	return <TechStack stack={tmSwin} />;
 };
 
-export const TechFintech = () => {
-	const fintechList = {
-		Next: SiNextdotjs,
-		Python: SiPython,
-		TS: SiTypescript,
-		Solidity: SiSolidity,
-		IPFS: SiIpfs,
-		Github: SiGithub,
+export const GreatEastTest = () => {
+	const tmTest = {
+		STLC: GrTestDesktop,
 	};
-	return <TechStack stack={fintechList} />;
+	return <TechStack stack={tmTest} />;
 };
 
-export const TechTeach = () => {
-	const teachList = {
-		Java: FaJava,
-		Python: SiPython,
-		Github: SiGithub,
+export const TechJK = () => {
+	const jkList = {
+		Windows: SiWindows,
+		MacOS: SiApple,
 	};
-
-	return <TechStack stack={teachList} />;
+	return <TechStack stack={jkList} />;
 };
 
-export const TechCurve = () => {
-	const curveList = {
-		Java: FaJava,
-		Maven: SiApachemaven,
-		CSS: SiCss3,
-		PgSQL: SiPostgresql,
-		Github: SiGithub,
+export const HealthCare = () => {
+	const tmHealthList = {
+		Healthcare: MdLocalHospital,
 	};
 
-	return <TechStack stack={curveList} />;
-};
-
-export const TechMaha = () => {
-	const mahaList = {
-		Flutter: SiFlutter,
-		Dart: SiDart,
-		PHP: SiPhpmyadmin,
-		Github: SiGithub,
-		MySQL: SiMysql,
-	};
-
-	return <TechStack stack={mahaList} />;
+	return <TechStack stack={tmHealthList} />;
 };
 
 export const Databases = () => {
@@ -196,7 +142,6 @@ export const Databases = () => {
 
 export const ToolsAndFramework = () => {
 	const frameworkList = {
-		Flask: SiFlask,
 		Android: SiAndroid,
 		Django: SiDjango,
 		React: SiReact,
@@ -217,8 +162,6 @@ export const ProficientLanguage = () => {
 		Java: FaJava,
 		JS: SiJavascript,
 		TS: SiTypescript,
-		Dart: SiDart,
-		Bash: SiGnubash,
 		"C++": SiCplusplus,
 		CSS: SiCss3,
 		HTML: SiHtml5,

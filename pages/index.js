@@ -39,7 +39,7 @@ export default function Home() {
 					</Paragraph>
 					<Box align="center" my={4} >
 						<NextLink href="/resume">
-							<Button colorScheme="telegram" rightIcon={<ChevronRightIcon />} >
+							<Button colorScheme="teal" rightIcon={<ChevronRightIcon />} >
 								My Resume
 							</Button>
 						</NextLink>
@@ -75,7 +75,7 @@ export default function Home() {
 					</SimpleGrid>
 					<Box align="center" my={4}>
 						<NextLink href="/works">
-							<Button rightIcon={<ChevronRightIcon />} colorScheme="telegram">
+							<Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
 								My Projects
 							</Button>
 						</NextLink>
@@ -109,7 +109,7 @@ export default function Home() {
 					</Heading>
 					<List>
 						<ListItem>
-							<Link href="https://github.com/ong6" target="_blank">
+							<Link href="https://github.com/Vince-Loh" target="_blank">
 								<Button
 									variant="outline"
 									colorScheme="blue"
@@ -120,7 +120,7 @@ export default function Home() {
 							</Link>
 						</ListItem>
 						<ListItem>
-							<Link href="https://www.linkedin.com/in/junx6/" target="_blank">
+							<Link href="https://www.linkedin.com/in/vince-loh-10146a1a2/" target="_blank">
 								<Button
 									variant="outline"
 									colorScheme="blue"
@@ -132,7 +132,7 @@ export default function Home() {
 							</Link>
 						</ListItem>
 						<ListItem>
-							<Link href="mailto:junxiongong2@gmail.com" target="_blank">
+							<Link href="mailto:vince.lohys@gmail.com" target="_blank">
 								<Button
 									variant="outline"
 									colorScheme="blue"

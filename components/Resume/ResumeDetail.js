@@ -6,6 +6,8 @@ import {
 	Spacer,
 	Text,
 	UnorderedList,
+	Link,
+	Button,
 } from "@chakra-ui/react";
 import React from "react";
 
@@ -20,7 +22,7 @@ export default function ResumeDetail({ detail }) {
 				<Text fontSize={18} fontWeight="bold">
 					{detail.title}
 				</Text>
-				<Text fontSize={18} fontWeight="medium">
+				<Text fontSize={16} fontWeight="bold" color="blue">
 					{detail.location}
 				</Text>
 			</Box>
@@ -32,21 +34,31 @@ export default function ResumeDetail({ detail }) {
 						flexDir={{ sm: "column", smmd: "row" }}
 						mb={{ sm: 4, smmd: 1 }}>
 						<Text
-							fontSize={18}
+							fontSize={14}
 							fontWeight="medium"
 							fontStyle="italic"
 							textAlign={{ sm: "center", smmd: "left" }}>
 							{role.subtitle}
 						</Text>
-						<Text fontSize={18} fontWeight="medium">
+						<Text fontSize={14} fontWeight="medium">
 							{role.date}
 						</Text>
 					</Flex>
-					<UnorderedList pl={8} fontSize={18} fontWeight="thin" mb={2}>
+					<UnorderedList pl={8} fontSize={14} fontWeight="light" mb={2} marginTop={"4px"}>
 						{role.description.map((description, index) => (
 							<ListItem key={index}>{description}</ListItem>
 						))}
 					</UnorderedList>
+					{/* Testimonial Button */}
+					{role.testimonialLink && (
+					<Flex justifyContent="center" mt={2}>
+					<Link href={role.testimonialLink} isExternal>
+						<Button mt={2} colorScheme="teal">
+							View Testimonial
+						</Button>
+					</Link>
+					</Flex>
+					)}
 				</Box>
 			))}
 			<Spacer pb={2} />

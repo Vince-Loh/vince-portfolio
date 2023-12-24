@@ -9,7 +9,6 @@ import Education from "../components/Resume/Education";
 import FeaturedProjects from "../components/Resume/FeaturedProjects";
 import WorkExperience from "../components/Resume/WorkExperience";
 import Section from "../components/Section";
-import Extracurricular from "../components/Resume/Extracurricular";
 
 const Works = () => (
 	<Layout title="Resume">
@@ -22,9 +21,6 @@ const Works = () => (
 			</Section>
 			<Section delay={0.5}>
 				<WorkExperience />
-			</Section>
-			<Section delay={0.7}>
-				<Extracurricular />
 			</Section>
 			<Section delay={0.9}>
 				<FeaturedProjects />

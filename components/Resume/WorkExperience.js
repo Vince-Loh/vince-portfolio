@@ -1,148 +1,116 @@
 import { Box, Heading, Link } from "@chakra-ui/react";
 import React from "react";
 import {
-	TechBinance,
-	TechCurve,
-	TechDBS,
-	TechMaha,
-	TechTanso,
-	TechThoughtMachine,
+	AutoCoachTech,
+	SwinnyTech,
+	GreatEastTest,
+	TechJK,
+	HealthCare,
 } from "./Icons";
 import ResumeDetail from "./ResumeDetail";
 
 const WorkDetails = [
 	{
-		title: "Binance",
-		location: "Remote",
+		title: "Autocoach Pty Ltd",
+		location: "On-site, Melbourne",
 		roles: [
 			{
-				subtitle: "Software Engineering Intern (Frontend), Payments Team",
-				date: "Aug 2023 - Nov 2023",
+				subtitle: "Region Technical Assistant",
+				date: "Feb 2023 - May 2023",
 				description: [
-					"Designed and implemented complex UI/UX systems in Typescript and React, boosting user engagement and impacting over 128 million users of Binance.",
-					"Collaborated on the Front End development of the 'Crypto Box', a unique feature streamlining payment distributions to group users.",
-					"Participated in the integration and testing of secure checkout payment systems while working with cross-functional teams.",
+					"Troubleshoot and resolve software issues reported by clients",
+					"Provide technical assistance and support to customers using the Autocoach Sports software applications",
+					"Participated in the integration and testing of systems",
+					"Collaborate with the development team to identify bugs and suggest possible improvements",
+					"Investigate complex technical issues raised by customers and provide detailed reports to the development team",
 				],
 			},
 		],
-		tech: <TechBinance />,
+		tech: <AutoCoachTech/>,
 	},
 	{
-		title: "Thought Machine",
+		title: "Swinburne University of Technology",
+		location: "On-site, Melbourne",
+		roles: [
+			{
+				subtitle: "Vintage Computer Technician",
+				date: "Feb 2023 - May 2023",
+				description: [
+					"Bringing vintage computers back to life through disassembling, examining, repairing, replacing parts, and cleaning.",
+					"Utilizing internet research from hobbyist sites to inform professional vintage computer restoration strategies.",
+					"Learning how to use and update a database for these vintage computers.",
+					"Creating clean, functional computer systems from the lab's collection of untested computers and spare parts.",
+				],
+			},
+		],
+		tech: <SwinnyTech/>,
+	},
+	{
+		title: "Great Eastern Life",
 		location: "Singapore",
 		roles: [
 			{
-				subtitle: "Software Engineering Intern (Client Engineering)",
-				date: "May 2023 - Aug 2023",
+				subtitle: "User Acceptance Testing Analyst",
+				date: "Aug 2020 - Nov 2020",
 				description: [
-					"Pioneered the development of a generalized remediation tool, streamlining the remediation process and ensuring product consistency, reducing duplicate work, and improving product delivery time.",
-					"Collaborated with engineers and analysts to develop tailored banking products, enhancing utility and client interactions while using Python and Postman for demonstrations.",
+					"Performed user acceptance testing for product launches and product enhancements in	accordance to business and operational requirements",
+					"Document and file testing artefacts and documents into retrievable repositories.",
+					"Prepare test data, monitor testing progress and to log defects.",
+					"Ensure proper closure of the entire testing process within stipulated timelines.",	
+					"Maintains awareness of industry trends on regulatory compliance, emerging threats and technologies in order to understand the risk and better safeguard the company.",
+					"Takes accountability in considering business and regulatory compliance risks and takes appropriate steps to mitigate the risks.",
 				],
 			},
 		],
-		tech: <TechThoughtMachine />,
+		tech: <GreatEastTest/>,
 	},
 	{
-		title: "Tanso",
-		location: "Germany, Munich",
-		roles: [
-			{
-				subtitle: "Software Engineering Intern (Fullstack)",
-				date: "July 2022 - Dec 2022",
-				description: [
-					"Worked with Typescript, NextJs, Prisma and tRPC to develop a full-stack dashboard app for carbon emissions tracking.",
-					"Learned how an early-stage start-up is ran and organized weekly product development sessions.",
-				],
-			},
-		],
-		tech: <TechTanso />,
-	},
-	{
-		title: "DBS Bank",
+		title: "JK Technology",
 		location: "Singapore",
 		roles: [
 			{
 				subtitle:
-					"Software Engineering Intern (Backend), Global Transaction Services",
-				date: "May 2022 - July 2022",
+					"Technical Specialist",
+				date: "June 2020 - September 2020",
 				description: [
-					"Created scheduled Cron jobs for key services and designed user acceptance testing.",
-					"Designed and engineered the backend models for the limit system with MySQL and Java Spring Boot.",
+					"Desktop Tech Refresh and data migration",
+					"Imaging of desktops and laptops",
+					"Hardware and software troubleshooting",
+					"OS and application patches and updates",
+					"Hardware and software installation",
 				],
+				testimonialLink: "/images/testimonial.pdf",
 			},
 		],
-		tech: <TechDBS />,
+		tech: <TechJK />,
 	},
 	{
-		title: "Mahachem",
+		title: "MinMed Clinic",
 		location: "Singapore",
 		roles: [
 			{
-				subtitle: "Software Engineering Intern (Mobile)",
-				date: "May 2021 - July 2021",
+				subtitle: "Covid-19 Swabber",
+				date: "Dec 2020 - May 2022",
 				description: [
-					<>
-						Developed and designed a{" "}
-						<Link
-							href={"https://appadvice.com/app/myassistant-2-0/1500392856"}
-							target="_blank">
-							Flutter Application
-						</Link>{" "}
-						to assist on site sales team with showcasing of products.
-					</>,
-					"Automated the conversion of products data into SQL databases for further analysis and managed the creation of API endpoints to be used by the client app.",
+					"During my year in Singapore, after serving the National Service, I was stuck in Singapore due to flight restrictions and i wanted to also do a part for the Covid Patients and hence i decided to work with MinMed Clinic to assist in the swabbing of patients for Covid-19.",
+					"Performing swab tests for patients",
+					"Activate isolation and evacuation procedures",
 				],
 			},
 		],
-		tech: <TechMaha />,
-	},
-	{
-		title: "Curveseries",
-		location: "Singapore",
-		roles: [
-			{
-				subtitle: "Software Engineering Intern (Backend)",
-				date: "Jan 2020 - April 2020",
-				description: [
-					"Conceptualized and developed Java Application to collect RSS News feeds and stored the data in a Postgres SQL database for analysis.",
-					"Organized refinery maintenance data to be set up for predictive analysis.",
-					"Performed formula-based charting on futures across various oil products.",
-				],
-			},
-		],
-		tech: <TechCurve />,
-	},
-	{
-		title: "National University of Singapore",
-		location: "Singapore",
-		roles: [
-			{
-				subtitle: "Teaching Assistant, CS2030S & CS2103T",
-				date: "Jan 2021 - May 2022",
-				description: [
-					"Conduct weekly tutorials, code review and marking and guided over 60 students across Object Oriented programming and Software Engineering modules.",
-					"Awarded with Student Mentor Award for Guiding Students through difficult coursework.",
-					<>
-						Designed and authored a{" "}
-						<Link href={"https://ong6.github.io/Unix-Guide/"} target="_blank">
-							website guide
-						</Link>{" "}
-						to help students get started with Unix systems.
-					</>,
-				],
-			},
-		],
+		tech: <HealthCare />,
 	},
 ];
 
 export default function WorkExperience() {
 	return (
 		<Box mb={4}>
+			
 			<Heading as="h3" variant="section-title" fontSize={24}>
 				Experience
 			</Heading>
 			{WorkDetails.map((detail, index) => (
-				<ResumeDetail key={index} detail={detail} />
+				<ResumeDetail key={index} detail={detail}/>
 			))}
 		</Box>
 	);
