@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+#hamburgerOption{
+	color: #fff !important;
+}
+
+#download
+{
+	color: #222 !important;
+}
+
+
 html,
 body {
 	padding: 0;
@@ -12,7 +22,7 @@ body {
 }
 
 a {
-	color: inherit;
+	color: black;
 	text-decoration: none;
 }
 

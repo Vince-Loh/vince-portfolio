@@ -31,7 +31,7 @@ export default function Intro() {
 						borderColor="whiteAlpha.800"
 						borderWidth={2}
 						borderStyle="solid"
-						maxW={{ sm: "250px" }}
+						maxW={{ sm: "200px" }}
 						display="inline-block"
 						borderRadius="full"
 						src="/images/Vince.png"

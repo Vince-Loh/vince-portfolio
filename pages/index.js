@@ -17,12 +17,9 @@ import { WorkGridItem } from "../components/GridItem";
 import Layout from "../components/layouts/Articles";
 import Paragraph from "../components/Paragraph";
 import Section from "../components/Section";
-import thumbMarkbind from "../public/images/works/markbind_01.png";
-import thumbNusConnect from "../public/images/works/nusconnect_03.png";
-import thumbSqueezy from "../public/images/works/squeezy_01.png";
-import thumbAmuze from "../public/images/works/amuze_01.png";
-import aws from "../public/images/works/AWS.png";
-
+import archery from "../public/images/works/Archery_DB.png";
+import suburbsolution from "../public/images/works/suburbsolutions.png";
+import dtpHome from "../public/images/works/dtp_home.png";
 
 export default function Home() {
 	return (
@@ -40,9 +37,9 @@ export default function Home() {
 						problems with code. When he is not coding, he loves gaming,
 						watching videos on programming or tinkering with computers.
 					</Paragraph>
-					<Box align="center" my={4}>
+					<Box align="center" my={4} >
 						<NextLink href="/resume">
-							<Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+							<Button colorScheme="telegram" rightIcon={<ChevronRightIcon />} >
 								My Resume
 							</Button>
 						</NextLink>
@@ -53,29 +50,32 @@ export default function Home() {
 					<Heading as="h3" variant="section-title">
 						Recent Projects
 					</Heading>
-					<SimpleGrid columns={[1, 2, 3]} gap={6}>
+					<SimpleGrid columns={[1, 2, 3]} gap={6} boxShadow={"2xl"} borderRadius={"10px"} padding={"20px"}>
 						<WorkGridItem
-							id="squeezy"
-							thumbnail={thumbSqueezy}
-							title="Project Squeezy (Won 2nd Place)">
-							Squeeze your stress away with this smart Stress-Ball!
+							id="suburbsolution"
+							thumbnail={suburbsolution}
+							title="Tool for Property Investments"
+							>
+							Sophiscated and user-centric solutions that provides real estate data and analytics in Australia
 						</WorkGridItem>
 						<WorkGridItem
-							id="amuze"
-							title="Amuze (1st Runner Up)"
-							thumbnail={thumbAmuze}>
-							The NFT museum for collectors rent, mint and earn!
+							id="dtp"
+							title="Decentralized Trading Platform"
+							thumbnail={dtpHome}>
+
+							The Decentralized Trading Platform for user transactions
 						</WorkGridItem>
 						<WorkGridItem
-							id="markbind"
-							thumbnail={thumbMarkbind}
-							title="Markbind">
-							A tool for generating static websites from Markdown-like syntax.
+							id="archery"
+							thumbnail={archery}
+							title="Archery Scoring">
+							Streamline scoring processes, maintain accurate records, and gain
+							valuable insights into archer performance.
 						</WorkGridItem>
 					</SimpleGrid>
 					<Box align="center" my={4}>
 						<NextLink href="/works">
-							<Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+							<Button rightIcon={<ChevronRightIcon />} colorScheme="telegram">
 								My Projects
 							</Button>
 						</NextLink>
@@ -84,17 +84,18 @@ export default function Home() {
 
 				<Section delay={0.5}>
 					<Heading as="h3" variant="section-title">
-						Certificates
+						Certification 
 					</Heading>
 					<Paragraph>
 						<Box align="center" my={4}>
-							
+						<img style={{width: "80px", height: "80px", borderRadius: "20px"}} src="/images/works/AWS.png" alt="AWS" />
 							<Link href="https://www.youracclaim.com/badges/6b6b6b6b-0b0b-4b6b-8b6b-6b6b6b6b6b6b/public_url" target="_blank">
 								<Button
 									variant="link"
-									colorScheme="blue"
+									textDecor={"underline"}
+									color={"black"}
+									marginTop={4}
 									>
-									<img src={{aws}} alt="AWS" />
 									AWS Certified Cloud Practitioner
 								</Button>
 							</Link>

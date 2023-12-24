@@ -26,7 +26,8 @@ export const WorkGridItem = ({
 	id,
 	title,
 	thumbnail,
-	backgroundColor,
+	backgroundColor = "transparent", // Default to transparent if not provided
+  	shadow = "none", // Default to none if not provided
 	padding = "0rem",
 }) => (
 	<Box w="100%" textAlign="center">

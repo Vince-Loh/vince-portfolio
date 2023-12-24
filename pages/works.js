@@ -4,121 +4,53 @@ import Layout from "../components/layouts/Articles";
 import Section from "../components/Section";
 
 // Importing thumbnails
-import thumbAbcdao from "../public/images/works/abcdao_01.png";
-import thumbAmuze from "../public/images/works/amuze_01.png";
-import thumbContractMe from "../public/images/works/contractme_01.png";
-import thumbCovalent from "../public/images/works/covalent_02.png";
-import thumbFintechWebsite from "../public/images/works/fintechwebsite_03.png";
-import thumbImposter from "../public/images/works/imposter_01.png";
-import thumbMarkbind from "../public/images/works/markbind_01.png";
-import thumbNusConnect from "../public/images/works/nusconnect_03.png";
-import thumbSqueezy from "../public/images/works/squeezy_01.png";
-import thumbMarkup from "../public/images/works/markup_01.png";
-import thumbVitalvision from "../public/images/works/vitalvision_01.png";
-import thumbCodeParty from "../public/images/works/codeparty_01.png";
+import suburbsolutions from "../public/images/works/suburbsolutions.png";
+import expensemain from "../public/images/works/3xpense_main.png";
+import archery from "../public/images/works/Archery_DB.png";
+import mastermind from "../public/images/works/Mastermind_ARMLite.png";
+import dtphome from "../public/images/works/dtp_home.png";
 
 const passionProjects = [
 	{
-		id: "codeparty",
-		title: "CodeParty",
-		thumbnail: thumbCodeParty,
+		id: "suburbsolution",
+		title: "Suburb Solutions",
+		thumbnail: suburbsolutions,
 		description:
-			"A leetcode clone built for CS3219 with the aim of helping students to prepare for technical interviews",
+			"A tool for property investors or buyers to find the best suburbs to invest in",
 		delay: 0.1,
 		backgroundColor: "white",
 		padding: "1rem",
 	},
 	{
-		id: "nusconnect",
-		title: "NUSConnect",
-		thumbnail: thumbNusConnect,
+		id: "expensemain",
+		title: "3xpense",
+		thumbnail: expensemain,
 		description:
-			"A gamified learning management system that is accessible to all and easy to use",
+			"A mobile application to allow users to have the ability to manage their money well in a single click.",
 		delay: 0.1,
 	},
 	{
-		id: "imposter",
-		title: "imPoster",
-		thumbnail: thumbImposter,
-		description: "API testing tool built for CLI lovers",
+		id: "archery",
+		title: "Archery Scoring System",
+		thumbnail: archery,
+		description: "An archery scoring system to Streamline scoring processes, maintain accurate records, and gain valuable insights into archer performance. ",
 		delay: 0.1,
 	},
 	{
-		id: "fintechwebsite",
-		title: "NUS Fintech Website",
-		thumbnail: thumbFintechWebsite,
+		id: "mastermind",
+		title: "ARM Mastermind Game",
+		thumbnail: mastermind,
 		description:
-			"A website built for NUS Fintech Society to showcase its projects and events",
+			"Coded a Mastermind game using ARM Assembly Language.",
 		delay: 0.1,
 	},
 	{
-		id: "abcdao",
-		title: "ABCDao",
-		thumbnail: thumbAbcdao,
+		id: "dtphome",
+		title: "Decentralized Trading Platform",
+		thumbnail: dtphome,
 		description:
-			"A decentralized autonomous organization that aims to provide a way for NUS fintech society members to vote on topics",
+			"Explored the use of blockchain technology to create a decentralized trading platform for user transactions.",
 		delay: 0.1,
-	},
-];
-
-const hackathonsWon = [
-	{
-		id: "vitalvision",
-		title: "Vital Vision (2nd Runner Up)",
-		thumbnail: thumbVitalvision,
-		description: "Gamify stroke rehabilitation with VR!",
-		delay: 0.5,
-		backgroundColor: "white",
-	},
-	{
-		id: "markup",
-		title: "Markup (2nd Runner Up)",
-		thumbnail: thumbMarkup,
-		description: "Mark smart, with Markup!",
-		delay: 0.5,
-		backgroundColor: "white",
-	},
-	{
-		id: "amuze",
-		title: "Amuze (1st Runner Up)",
-		thumbnail: thumbAmuze,
-		description: "The NFT museum for collectors rent, mint and earn!",
-		delay: 0.5,
-	},
-	{
-		id: "squeezy",
-		title: "Project Squeezy (1st Runner Up)",
-		thumbnail: thumbSqueezy,
-		description: "Squeeze your stress away with this smart Stress-Ball!",
-		delay: 0.5,
-	},
-];
-
-const designProjects = [
-	{
-		id: "covalent",
-		title: "Covalent",
-		thumbnail: thumbCovalent,
-		description: "A social media dashboard for video producers",
-		delay: 0.6,
-	},
-	{
-		id: "contractme",
-		title: "ContractMe!",
-		thumbnail: thumbContractMe,
-		description: "Hiring contractors has never been so easy!",
-		delay: 0.6,
-	},
-];
-
-const openSourceContributions = [
-	{
-		id: "markbind",
-		title: "Markbind",
-		thumbnail: thumbMarkbind,
-		description:
-			"A tool for generating static websites from Markdown-like syntax.",
-		delay: 0.9,
 	},
 ];
 
@@ -139,7 +71,7 @@ const renderProjects = (projects) =>
 const Works = () => (
 	<Layout title="Works">
 		<Box>
-			<Heading as="h3" fontSize={20} mb={4}>
+			<Heading as="h3" variant="section-title" fontSize={20} mb={4}>
 				Passion Projects
 			</Heading>
 			<SimpleGrid columns={[1, 1, 1, 2]} gap={6}>
@@ -147,28 +79,6 @@ const Works = () => (
 			</SimpleGrid>
 
 			<Divider my={6} />
-			<Heading as="h3" fontSize={20} mb={4}>
-				Hackathons Won
-			</Heading>
-			<SimpleGrid columns={[1, 1, 1, 2]} gap={6}>
-				{renderProjects(hackathonsWon)}
-			</SimpleGrid>
-
-			<Divider my={6} />
-			<Heading as="h3" fontSize={20} mb={4}>
-				Design Projects
-			</Heading>
-			<SimpleGrid columns={[1, 1, 1, 2]} gap={6}>
-				{renderProjects(designProjects)}
-			</SimpleGrid>
-
-			<Divider my={6} />
-			<Heading as="h3" fontSize={20} mb={4}>
-				Open Source Contributions
-			</Heading>
-			<SimpleGrid columns={[1, 1, 1, 2]} gap={6}>
-				{renderProjects(openSourceContributions)}
-			</SimpleGrid>
 		</Box>
 	</Layout>
 );

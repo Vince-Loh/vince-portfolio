@@ -15,6 +15,9 @@ import {
 	useColorModeValue,
 } from "@chakra-ui/react";
 
+import { HamburgerIcon } from "@chakra-ui/icons";
+
+
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
 	const active = path === href;
@@ -51,6 +54,10 @@ const Navbar = (props) => {
 		{
 			href: "/works",
 			name: "Works",
+		},
+		{
+			href: "/blog",
+			name: "Blogs",
 		},
 	];
 
@@ -89,6 +96,26 @@ const Navbar = (props) => {
 						</LinkItem>
 					))}
 				</Stack>
+
+				<Box flex={1} align="right">
+					<Box ml={2} display={{ base: "inline-block", md: "none" }}>
+						<Menu isLazy id="navbar-menu">
+							<MenuButton
+								as={IconButton}
+								icon={<HamburgerIcon />}
+								variant="outline"
+								aria-label="Options"
+							/>
+							<MenuList style={{ backgroundColor: '#3D7AED' }} >
+								{navigationLinks.map((link) => (
+									<NextLink href={link.href} path={path} key={link.name}>
+										<MenuItem  className="hamburgerOption" as={Link} style={{ color: '#ffffff' }} as={Link}>{link.name}</MenuItem>
+									</NextLink>
+								))}
+							</MenuList>
+						</Menu>
+					</Box>
+				</Box>
 			</Container>
 		</Box>
 	);

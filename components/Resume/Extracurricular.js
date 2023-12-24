@@ -56,7 +56,7 @@ export default function Extracurricular() {
 	return (
 		<Box mb={8}>
 			<Heading as="h3" variant="section-title" fontSize={24}>
-				Extracurricular Activities
+				Volunteer
 			</Heading>
 			{extracurricular.map((detail, index) => (
 				<ResumeDetail key={index} detail={detail} />
