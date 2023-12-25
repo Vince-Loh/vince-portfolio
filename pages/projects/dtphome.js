@@ -21,7 +21,7 @@ const Work = () => (
 	<Layout title="DTP">
 		<Box>
 			<Title>
-				$Decentralized Trading Platform <Badge bg ="blue">August 2023 - Nov 2023</Badge>
+				Decentralized Trading Platform <Badge bg ="blue">August 2023 - Nov 2023</Badge>
 			</Title>
 			<P style={{ fontSize: '14px' }}>
 			Throughout one of my course unit, i&apos;ve successfully created a robust Decentralized Trading Platform. By harnessing the power of React.js, enhanced by the MaterialUI framework, the platform boasts a responsive and visually captivating user interface. React&apos;s dynamic capabilities, combined with MaterialUI&apos;s vast component library, ensured a streamlined and user-friendly frontend experience. 

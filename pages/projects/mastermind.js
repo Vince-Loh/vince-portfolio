@@ -21,7 +21,7 @@ const Work = () => (
 	<Layout title="Mastermind">
 		<Box>
 			<Title>
-				$Mastermind <Badge bg ="blue">Feb 2022 - July 2022</Badge>
+				Mastermind <Badge bg ="blue">Feb 2022 - July 2022</Badge>
 			</Title>
 			<P style={{ fontSize: '14px' }}>
 			Developed a simple mastermind game using ARM Assembly Language in which users have to input their name,

@@ -16,7 +16,7 @@ const Work = () => (
 	<Layout title="Suburb Solutions">
 		<Box>
 			<Title>
-				$Suburb Solutions <Badge bg ="blue">March 2023 - Nov 2023</Badge>
+				Suburb Solutions <Badge bg ="blue">March 2023 - Nov 2023</Badge>
 			</Title>
 			<P style={{ fontSize: '14px' }}>
 			The starting point of this project can be attributed to the growing demand for a more sophisticated and user-centric solution in the real estate domain.

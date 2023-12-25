@@ -59,7 +59,7 @@ export default function Education() {
 			</p>
 			<div className="mt-2" style={{ marginBottom: "20px" }}>
 				<a
-					href="/images/resume.pdf"
+					href="/images/vince_resume.pdf"
 					className="inline-flex items-center rounded-lg border border-gray-200 bg-[#3D7AED] py-2 px-4 text-sm font-medium text-white hover:bg-opacity-90 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:focus:ring-gray-700 "
 				>
 					<DocumentDownloadIcon className="mr-2 h-4 w-4" />
