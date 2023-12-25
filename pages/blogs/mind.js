@@ -40,7 +40,7 @@ const Blog = () => (
 
                <P>
                     <li>How can I harness tech to help people with ADHD like myself?</li>
-                    <li>How might I use spaced repetition to program my future self`&apos;`s attention?</li>
+                    <li>How might I use spaced repetition to program my future self&apos;s attention?</li>
                     <li>How can I better experiment with solutions to help myself?</li>
                     <li>How can I create an enabling environment for myself?</li>
                     <li>How can I build a symbiotic economic engine so I can keep working on the above?</li>
