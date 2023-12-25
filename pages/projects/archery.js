@@ -22,7 +22,7 @@ const Work = () => (
 			This is a custom project that i have did during one of my course unit in my university.
 			It is an Archery Scoring System, where clubs can easily set up the tournament details,
 			define the rounds and categories, and register participating archers. During the tournament, scorers can quickly record arrow scores for
-			each end using the system's intuitive interface. The scores are instantly calculated, and real-time leaderboards can be displayed for
+			each end using the system`&apos;`s intuitive interface. The scores are instantly calculated, and real-time leaderboards can be displayed for
 			participants and spectators. After the tournament, the club administrators can generate detailed reports to analyze the performance of
 			individual archers, identify top performers, and track improvements over time. The system simplifies the scoring process, reduces manual
 			errors, and provides accurate results for a fair and enjoyable competition.
