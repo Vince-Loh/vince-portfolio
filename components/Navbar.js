@@ -52,11 +52,11 @@ const Navbar = (props) => {
 			name: "Resume",
 		},
 		{
-			href: "/works",
-			name: "Works",
+			href: "/projects",
+			name: "Projects",
 		},
 		{
-			href: "/blog",
+			href: "/blogs",
 			name: "Blogs",
 		},
 	];

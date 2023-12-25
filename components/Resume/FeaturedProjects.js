@@ -3,9 +3,6 @@ import { Box, Button, Heading, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import NextLink from "next/link";
 import { WorkGridItem } from "../GridItem";
-//import thumbMarkbind from "../../public/images/works/markbind_01.png";
-//import thumbNusConnect from "../../public/images/works/nusconnect_03.png";
-//import thumbSqueezy from "../../public/images/works/squeezy_01.png";
 import suburbsolution from "../../public/images/works/suburbsolutions.png";
 import dtpHome from "../../public/images/works/dtp_home.png";
 import archery from "../../public/images/works/Archery_DB.png";
@@ -40,7 +37,7 @@ export default function FeaturedProjects() {
 				</WorkGridItem>
 			</SimpleGrid>
 			<Box align="center" my={4}>
-				<NextLink href="/works">
+				<NextLink href="/projects">
 					<Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
 						View All Works
 					</Button>

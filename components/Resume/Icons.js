@@ -4,6 +4,7 @@ import React from "react";
 import { MdLocalHospital } from "react-icons/md";
 import { GrTestDesktop } from "react-icons/gr";
 import {
+	SiTailwindcss,
 	SiWindows,
 	SiApple,
 	SiAndroid,
@@ -132,9 +133,7 @@ export const Databases = () => {
 		MySQL: SiMysql,
 		Firebase: SiFirebase,
 		Heroku: SiHeroku,
-		IPFS: SiIpfs,
 		mongodb: SiMongodb,
-		Kafka: SiApachekafka,
 	};
 
 	return <TechStack stack={databaseList} />;
@@ -142,10 +141,11 @@ export const Databases = () => {
 
 export const ToolsAndFramework = () => {
 	const frameworkList = {
-		Android: SiAndroid,
+		Kotlin: SiAndroid,
 		Django: SiDjango,
 		React: SiReact,
 		Next: SiNextdotjs,
+		Tailwind: SiTailwindcss,
 		Redux: SiRedux,
 		Vercel: SiVercel,
 		Vue: SiVuedotjs,
@@ -163,6 +163,7 @@ export const ProficientLanguage = () => {
 		JS: SiJavascript,
 		TS: SiTypescript,
 		"C++": SiCplusplus,
+		"C#": SiCsharp,
 		CSS: SiCss3,
 		HTML: SiHtml5,
 		Python: SiPython,

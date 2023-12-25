@@ -92,7 +92,7 @@ const WorkDetails = [
 				subtitle: "Covid-19 Swabber",
 				date: "Dec 2020 - May 2022",
 				description: [
-					"During my year in Singapore, after serving the National Service, I was stuck in Singapore due to flight restrictions and i wanted to also do a part for the Covid Patients and hence i decided to work with MinMed Clinic to assist in the swabbing of patients for Covid-19.",
+					"During my year in Singapore, after serving the National Service, I was stuck in Singapore due to flight restrictions and I wanted to also do a part for the Covid Patients and hence I have decided to work with MinMed Clinic to assist in the swabbing of patients for Covid-19.",
 					"Performing swab tests for patients",
 					"Activate isolation and evacuation procedures",
 				],

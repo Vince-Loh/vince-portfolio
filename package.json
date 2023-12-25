@@ -1,19 +1,9 @@
 {
-	"name": "junxiong-homepage",
+	"name": "vince-homepage",
 	"private": true,
-	"description": "Jun Xiong's Website",
+	"description": "Vince Loh's Website",
 	"version": "1.0.0",
-	"author": "Jun Xiong <ong6>",
-	"keywords": [
-		"junxiong",
-		"ong6",
-		"homepage",
-		"jun xiong",
-		"ong",
-		"ong jun xiong",
-		"jun xiong ong",
-		"ongjunxiong"
-	],
+	"author": "Vince Loh",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",

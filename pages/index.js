@@ -74,7 +74,7 @@ export default function Home() {
 						</WorkGridItem>
 					</SimpleGrid>
 					<Box align="center" my={4}>
-						<NextLink href="/works">
+						<NextLink href="/projects">
 							<Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
 								My Projects
 							</Button>

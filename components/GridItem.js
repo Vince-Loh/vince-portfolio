@@ -31,7 +31,7 @@ export const WorkGridItem = ({
 	padding = "0rem",
 }) => (
 	<Box w="100%" textAlign="center">
-		<NextLink href={`/works/${id}`} passHref>
+		<NextLink href={`/projects/${id}`} passHref>
 			<LinkBox cursor="pointer">
 				<Box
 					position="relative"
@@ -63,7 +63,7 @@ export const WorkGridItem = ({
 						/>
 					</div>
 				</Box>
-				<LinkOverlay href={`/works/${id}`}>
+				<LinkOverlay href={`/projects/${id}`}>
 					<Text mt={2} fontSize={20}>
 						{title}
 					</Text>
@@ -71,6 +71,61 @@ export const WorkGridItem = ({
 				<Text fontSize={14}>{children}</Text>
 			</LinkBox>
 		</NextLink>
+		
+	</Box>
+);
+
+export const SimpleGridItem = ({
+	children,
+	id,
+	title,
+	thumbnail,
+	backgroundColor = "transparent", // Default to transparent if not provided
+  	shadow = "none", // Default to none if not provided
+	padding = "0rem",
+}) => (
+	<Box w="100%" textAlign="center">
+		<NextLink href={`/blogs/${id}`} passHref>
+			<LinkBox cursor="pointer">
+				<Box
+					position="relative"
+					w="100%"
+					h="0"
+					paddingBottom="56.25%" // 16:9 Aspect Ratio
+					backgroundColor={backgroundColor}
+					display="flex"
+					justifyContent="center"
+					alignItems="center"
+					rounded="2xl"
+					overflow="hidden">
+					<div
+						style={{
+							position: "absolute",
+							top: 0,
+							left: 0,
+							bottom: 0,
+							right: 0,
+							padding: padding,
+						}}>
+						<Image
+							src={thumbnail}
+							alt={title}
+							layout="responsive"
+							width={16}
+							height={9}
+							objectFit="contain" // Use contain to see full image without crop
+						/>
+					</div>
+				</Box>
+				<LinkOverlay href={`/blogs/${id}`}>
+					<Text mt={2} fontSize={20}>
+						{title}
+					</Text>
+				</LinkOverlay>
+				<Text fontSize={14}>{children}</Text>
+			</LinkBox>
+		</NextLink>
+		
 	</Box>
 );
 
