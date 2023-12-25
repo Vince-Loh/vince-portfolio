@@ -5,7 +5,7 @@ import NextLink from "next/link";
 import { WorkGridItem } from "../GridItem";
 import suburbsolution from "../../public/images/works/suburbsolutions.png";
 import dtpHome from "../../public/images/works/dtp_home.png";
-import archery from "../../public/images/works/Archery_DB.png";
+import archery from "../../public/images/works/archery_rounds.png";
 
 export default function FeaturedProjects() {
 	return (

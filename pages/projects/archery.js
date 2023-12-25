@@ -12,6 +12,7 @@ import { Title, WorkImage, Meta } from "../../components/Work";
 import P from "../../components/Paragraph";
 import Layout from "../../components/layouts/Articles";
 
+
 const Work = () => (
 	<Layout title="Next_Gen">
 		<Box>
@@ -47,12 +48,9 @@ const Work = () => (
 			</Heading>
 
 			<div className="space-y-8">
-				<WorkImage src="/images/works/Archery_DB.png" alt="suburbstn" />
-				<WorkImage src="/images/works/archery_rounds.png" alt="suburbstn" />
-				<WorkImage src="/images/works/archery_score.png" alt="suburbstn" />
-				<WorkImage src="/images/works/archery_cat.png" alt="suburbstn" />
-
-
+				<WorkImage src="/images/works/archery_cat.png" alt="under-repair" />
+				<WorkImage src="/images/works/archery_rounds.png" alt="under-repair" />
+				<WorkImage src="/images/works/archery_score.png" alt="under-repair" />
 			</div>
 		</Box>
 	</Layout>

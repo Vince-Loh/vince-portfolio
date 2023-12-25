@@ -17,7 +17,7 @@ import { WorkGridItem } from "../components/GridItem";
 import Layout from "../components/layouts/Articles";
 import Paragraph from "../components/Paragraph";
 import Section from "../components/Section";
-import archery from "../public/images/works/Archery_DB.png";
+import archery from "../public/images/works/archery_score.png";
 import suburbsolution from "../public/images/works/suburbsolutions.png";
 import dtpHome from "../public/images/works/dtp_home.png";
 
@@ -89,7 +89,7 @@ export default function Home() {
 					<Paragraph>
 						<Box align="center" my={4}>
 						<img style={{width: "80px", height: "80px", borderRadius: "20px"}} src="/images/works/AWS.png" alt="AWS" />
-							<Link href="https://www.youracclaim.com/badges/6b6b6b6b-0b0b-4b6b-8b6b-6b6b6b6b6b6b/public_url" target="_blank">
+							<Link href="" target="_blank">
 								<Button
 									variant="link"
 									textDecor={"underline"}

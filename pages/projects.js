@@ -6,7 +6,7 @@ import Section from "../components/Section";
 // Importing thumbnails
 import suburbsolutions from "../public/images/works/suburbsolutions.png";
 import expensemain from "../public/images/works/3xpense_main.png";
-import archery from "../public/images/works/Archery_DB.png";
+import archery from "../public/images/works/Archery_rounds.png";
 import mastermind from "../public/images/works/Mastermind_ARMLite.png";
 import dtphome from "../public/images/works/dtp_home.png";
 
