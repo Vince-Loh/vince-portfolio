@@ -21,7 +21,7 @@ const Blog = () => (
 	<Layout title="mind">
 		<Box>
 			<Title>
-				What`&apos;`s top of my mind? <Badge bg ="blue">25 Dec 2023</Badge>
+				What&apos;s top of my mind? <Badge bg ="blue">25 Dec 2023</Badge>
 			</Title>
 			<List ml={4} my={4}>
 				<ListItem>
@@ -35,7 +35,7 @@ const Blog = () => (
 			</List>
 
 			<Heading as="h4" fontSize={16} my={8}>
-				<Center>Stuff I`&apos;`m focused on thinking about.</Center>
+				<Center>Stuff I&apos;m focused on thinking about.</Center>
 			</Heading>
 
                <P>
