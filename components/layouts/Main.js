@@ -3,7 +3,6 @@ import Head from "next/head";
 import Vince from "../Intro";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import { Analytics } from "@vercel/analytics/react";
 
 const Main = ({ children, router }) => {
     return (
@@ -29,8 +28,6 @@ const Main = ({ children, router }) => {
 
                 <Footer />
             </Container>
-
-            <Analytics />
         </Box>
     );
 };
