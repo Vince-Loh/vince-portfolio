@@ -1,7 +1,7 @@
 import { Icon } from "@chakra-ui/icons";
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
-import { MdLocalHospital } from "react-icons/md";
+import { MdLocalHospital, MdBusiness } from "react-icons/md"; // Added MdBusiness here
 import { GrTestDesktop } from "react-icons/gr";
 import {
 	SiTailwindcss,
@@ -12,7 +12,7 @@ import {
 	SiApachemaven,
 	SiAzuredevops,
 	SiCplusplus,
-	SiCsharp ,
+	SiCsharp,
 	SiCss3,
 	SiDjango,
 	SiDocker,
@@ -42,7 +42,6 @@ import {
 	SiVuedotjs, 
 } from "react-icons/si";
 import { FaJava, FaComputer } from "react-icons/fa";
-
 
 export const ResumeLogo = ({ children, title, thumbnail, small = false }) => (
 	<Box
@@ -87,7 +86,7 @@ export default function TechStack({ stack }) {
 }
 
 export const AutoCoachTech = () => {
-	const  tmCoach = {
+	const tmCoach = {
 		"C++": SiCplusplus,
 		"C#": SiCsharp,
 		Jira: SiJira,
@@ -95,6 +94,7 @@ export const AutoCoachTech = () => {
 	};
 	return <TechStack stack={tmCoach} />;
 };
+
 export const SwinnyTech = () => {
 	const tmSwin = {
 		Windows: SiWindows,
@@ -122,7 +122,6 @@ export const HealthCare = () => {
 	const tmHealthList = {
 		Healthcare: MdLocalHospital,
 	};
-
 	return <TechStack stack={tmHealthList} />;
 };
 
@@ -135,7 +134,6 @@ export const Databases = () => {
 		Heroku: SiHeroku,
 		mongodb: SiMongodb,
 	};
-
 	return <TechStack stack={databaseList} />;
 };
 
@@ -153,7 +151,6 @@ export const ToolsAndFramework = () => {
 		Git: SiGithub,
 		Google: SiGooglecloud,
 	};
-
 	return <TechStack stack={frameworkList} />;
 };
 
@@ -169,6 +166,12 @@ export const ProficientLanguage = () => {
 		Python: SiPython,
 		Solidity: SiSolidity,
 	};
-
 	return <TechStack stack={languageList} />;
+};
+
+export const FacilitiesTech = () => {
+	const facilitiesStack = {
+		Facilities: MdBusiness,
+	};
+	return <TechStack stack={facilitiesStack} />;
 };

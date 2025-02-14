@@ -9,8 +9,19 @@ import expensemain from "../public/images/works/3xpense_main.png";
 import archery from "../public/images/works/archery_rounds.png";
 import mastermind from "../public/images/works/Mastermind_ARMLite.png";
 import dtphome from "../public/images/works/dtp_home.png";
+import proproo from "../public/images/works/proproo_home.png"; // New thumbnail for Proproo
 
 const passionProjects = [
+	{
+		id: "proproo",
+		title: "Proproo",
+		thumbnail: proproo,
+		description:
+			"A property management website, live at proproo.com.au",
+		delay: 0.1,
+		backgroundColor: "white",
+		padding: "1rem",
+	},
 	{
 		id: "suburbsolution",
 		title: "Suburb Solutions",
@@ -33,7 +44,8 @@ const passionProjects = [
 		id: "archery",
 		title: "Archery Scoring System",
 		thumbnail: archery,
-		description: "An archery scoring system to Streamline scoring processes, maintain accurate records, and gain valuable insights into archer performance. ",
+		description:
+			"An archery scoring system to streamline scoring processes, maintain accurate records, and gain valuable insights into archer performance.",
 		delay: 0.1,
 	},
 	{
@@ -77,7 +89,6 @@ const Works = () => (
 			<SimpleGrid columns={[1, 1, 1, 2]} gap={6}>
 				{renderProjects(passionProjects)}
 			</SimpleGrid>
-
 			<Divider my={6} />
 		</Box>
 	</Layout>

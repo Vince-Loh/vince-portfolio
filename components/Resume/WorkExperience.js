@@ -6,111 +6,141 @@ import {
 	GreatEastTest,
 	TechJK,
 	HealthCare,
+	FacilitiesTech  // new icon for facilities management
 } from "./Icons";
 import ResumeDetail from "./ResumeDetail";
 
 const WorkDetails = [
-	{
-		title: "Autocoach Pty Ltd",
-		location: "On-site, Melbourne",
-		roles: [
-			{
-				subtitle: "Region Technical Assistant",
-				date: "Feb 2023 - May 2023",
-				description: [
-					"Troubleshoot and resolve software issues reported by clients",
-					"Provide technical assistance and support to customers using the Autocoach Sports software applications",
-					"Participated in the integration and testing of systems",
-					"Collaborate with the development team to identify bugs and suggest possible improvements",
-					"Investigate complex technical issues raised by customers and provide detailed reports to the development team",
-				],
-			},
-		],
-		tech: <AutoCoachTech/>,
-	},
-	{
-		title: "Swinburne University of Technology",
-		location: "On-site, Melbourne",
-		roles: [
-			{
-				subtitle: "Vintage Computer Technician",
-				date: "Feb 2023 - May 2023",
-				description: [
-					"Bringing vintage computers back to life through disassembling, examining, repairing, replacing parts, and cleaning.",
-					"Utilizing internet research from hobbyist sites to inform professional vintage computer restoration strategies.",
-					"Learning how to use and update a database for these vintage computers.",
-					"Creating clean, functional computer systems from the lab's collection of untested computers and spare parts.",
-				],
-			},
-		],
-		tech: <SwinnyTech/>,
-	},
-	{
-		title: "Great Eastern Life",
-		location: "Singapore",
-		roles: [
-			{
-				subtitle: "User Acceptance Testing Analyst",
-				date: "Aug 2020 - Nov 2020",
-				description: [
-					"Performed user acceptance testing for product launches and product enhancements in	accordance to business and operational requirements",
-					"Document and file testing artefacts and documents into retrievable repositories.",
-					"Prepare test data, monitor testing progress and to log defects.",
-					"Ensure proper closure of the entire testing process within stipulated timelines.",	
-					"Maintains awareness of industry trends on regulatory compliance, emerging threats and technologies in order to understand the risk and better safeguard the company.",
-					"Takes accountability in considering business and regulatory compliance risks and takes appropriate steps to mitigate the risks.",
-				],
-			},
-		],
-		tech: <GreatEastTest/>,
-	},
-	{
-		title: "JK Technology",
-		location: "Singapore",
-		roles: [
-			{
-				subtitle:
-					"Technical Specialist",
-				date: "June 2020 - September 2020",
-				description: [
-					"Desktop Tech Refresh and data migration",
-					"Imaging of desktops and laptops",
-					"Hardware and software troubleshooting",
-					"OS and application patches and updates",
-					"Hardware and software installation",
-				],
-				testimonialLink: "/images/testimonial.pdf",
-			},
-		],
-		tech: <TechJK />,
-	},
-	{
-		title: "MinMed Clinic",
-		location: "Singapore",
-		roles: [
-			{
-				subtitle: "Covid-19 Swabber",
-				date: "Dec 2020 - May 2022",
-				description: [
-					"During my year in Singapore, after serving the National Service, I was stuck in Singapore due to flight restrictions and I wanted to also do a part for the Covid Patients and hence I have decided to work with MinMed Clinic to assist in the swabbing of patients for Covid-19.",
-					"Performing swab tests for patients",
-					"Activate isolation and evacuation procedures",
-				],
-			},
-		],
-		tech: <HealthCare />,
-	},
+  {
+    title: "Focused Facilities Management Pty Ltd",
+    location: "Aurora, Melbourne",
+    roles: [
+      {
+        subtitle: "Building Concierge - Part Time",
+        date: "June 2024 - 28 Feb 2025",
+        description: [
+          "Manage front-desk operations and provide excellent customer service to tenants and visitors",
+          "Coordinate maintenance and liaise with contractors to promptly resolve building issues",
+          "Ensure security protocols are followed and assist with access control",
+          "Foster positive communication between tenants and management"
+        ]
+      }
+    ],
+    tech: <FacilitiesTech />
+  },
+  {
+    title: "Troche - Medtech",
+    location: "Remote",
+    roles: [
+      {
+        subtitle: "Developer/Designer",
+        date: "Nov. 2023 – Oct. 2024",
+        description: [
+          "Developed diabetes management hardware and software, including user testing and prototyping",
+          "Designed a 3D model integrating blood glucose monitoring and alarms, synced with a mobile app",
+          "Collaborated with industry partners such as AWS, Reece Group, and LaunchVic to refine business strategies and tech solutions"
+        ]
+      }
+    ],
+    tech: <HealthCare />
+  },
+  {
+    title: "Autocoach Pty Ltd",
+    location: "On-site, Melbourne",
+    roles: [
+      {
+        subtitle: "Region Technical Specialist - Internship",
+        date: "May 2023 – Sept. 2023",
+        description: [
+          "Addressed technical issues for customers in South East Asia",
+          "Provided detailed reports to the development team and offered technical support for Autocoach Sports software",
+          "Participated in system integration and testing",
+          "Collaborated with the team to identify and resolve bugs",
+          "Worked with Ang Peng Siong, Singapore’s Swimming National Head Coach, on device updates and patches"
+        ]
+      }
+    ],
+    tech: <AutoCoachTech />
+  },
+  {
+    title: "Swinburne University of Technology",
+    location: "On-site, Melbourne",
+    roles: [
+      {
+        subtitle: "Vintage Computer Technician - Internship",
+        date: "Feb 2023 – May 2023",
+        description: [
+          "Restored vintage computers by disassembling, examining, repairing, replacing parts, and cleaning",
+          "Conducted research using hobbyist sites to inform restoration strategies",
+          "Updated and maintained a database for tracking vintage computer systems",
+          "Rebuilt functional systems from untested computers and spare parts"
+        ]
+      }
+    ],
+    tech: <SwinnyTech />
+  },
+  {
+    title: "MinMed Clinic",
+    location: "Singapore",
+    roles: [
+      {
+        subtitle: "Healthcare Assistant",
+        date: "June 2021 - May 2022",
+        description: [
+          "Assisted in swabbing patients for Covid-19 during travel restrictions in Singapore",
+          "Performed swab tests and activated isolation and evacuation procedures as needed",
+          "Contributed to the healthcare team during a critical period of the pandemic"
+        ]
+      }
+    ],
+    tech: <HealthCare />
+  },
+  {
+    title: "JK Technology",
+    location: "Singapore",
+    roles: [
+      {
+        subtitle: "Technical Specialist",
+        date: "Nov. 2020 – June 2021",
+        description: [
+          "Serviced approximately 20,000 computers",
+          "Managed desktop tech refresh and data migration",
+          "Imaged desktops and laptops, and performed hardware and software troubleshooting",
+          "Applied OS and application patches and updates",
+          "Supported banking clients like OCBC Bank and Great Eastern in Fintech solutions"
+        ]
+      }
+    ],
+    tech: <TechJK />
+  },
+  {
+    title: "Great Eastern Life",
+    location: "Singapore",
+    roles: [
+      {
+        subtitle: "User Acceptance Testing Analyst",
+        date: "March 2020 – November 2020",
+        description: [
+          "Performed user acceptance testing for product launches and enhancements",
+          "Documented testing artifacts and prepared test data",
+          "Monitored testing progress, logged defects, and ensured timely closure of the testing process",
+          "Provided post-implementation support and assisted in creating training documentation",
+          "Managed business and regulatory compliance risks by staying updated on industry trends"
+        ]
+      }
+    ],
+    tech: <GreatEastTest />
+  }
 ];
 
 export default function WorkExperience() {
 	return (
 		<Box mb={4}>
-			
 			<Heading as="h3" variant="section-title" fontSize={24}>
 				Experience
 			</Heading>
 			{WorkDetails.map((detail, index) => (
-				<ResumeDetail key={index} detail={detail}/>
+				<ResumeDetail key={index} detail={detail} />
 			))}
 		</Box>
 	);
