@@ -11,6 +11,7 @@ import {
 	SimpleGrid,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
+import Image from "next/image";
 import { AiTwotoneMail } from "react-icons/ai";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { WorkGridItem } from "../components/GridItem";
@@ -38,9 +39,9 @@ export default function Home() {
 						problems with code. When he is not coding, he loves gaming,
 						watching videos on programming or tinkering with computers.
 					</Paragraph>
-					<Box align="center" my={4} >
+					<Box align="center" my={4}>
 						<NextLink href="/resume">
-							<Button colorScheme="teal" rightIcon={<ChevronRightIcon />} >
+							<Button colorScheme="teal" rightIcon={<ChevronRightIcon />}>
 								My Resume
 							</Button>
 						</NextLink>
@@ -51,26 +52,25 @@ export default function Home() {
 					<Heading as="h3" variant="section-title">
 						Recent Projects
 					</Heading>
-					<SimpleGrid columns={[1, 2, 3]} gap={6} boxShadow={"2xl"} borderRadius={"10px"} padding={"20px"}>
+					<SimpleGrid
+						columns={[1, 2, 3]}
+						gap={6}
+						boxShadow={"2xl"}
+						borderRadius={"10px"}
+						padding={"20px"}
+					>
 						<WorkGridItem
 							id="suburbsolution"
 							thumbnail={suburbsolution}
 							title="Tool for Property Investments"
-							>
+						>
 							Sophiscated and user-centric solutions that provides real estate data and analytics in Australia
 						</WorkGridItem>
-						<WorkGridItem
-							id="dtp"
-							title="Decentralized Trading Platform"
-							thumbnail={dtpHome}>
-
+						<WorkGridItem id="dtp" title="Decentralized Trading Platform" thumbnail={dtpHome}>
 							The Decentralized Trading Platform for user transactions
 						</WorkGridItem>
-						<WorkGridItem
-							id="proproo"
-							thumbnail={proproo}
-							title="Proproo Property Website">
-							Proproo's website is the one of the biggest project that I personally have ever done myself especially for the database, backend and frontend.
+						<WorkGridItem id="proproo" thumbnail={proproo} title="Proproo Property Website">
+							Proproo&apos;s website is the one of the biggest project that I personally have ever done myself especially for the database, backend and frontend.
 						</WorkGridItem>
 					</SimpleGrid>
 					<Box align="center" my={4}>
@@ -84,18 +84,24 @@ export default function Home() {
 
 				<Section delay={0.5}>
 					<Heading as="h3" variant="section-title">
-						Certification 
+						Certification
 					</Heading>
 					<Paragraph>
 						<Box align="center" my={4}>
-						<img style={{width: "80px", height: "80px", borderRadius: "20px"}} src="/images/works/AWS.png" alt="AWS" />
+							<Image
+								style={{ borderRadius: "20px" }}
+								src="/images/works/AWS.png"
+								alt="AWS"
+								width={80}
+								height={80}
+							/>
 							<Link href="" target="_blank">
 								<Button
 									variant="link"
 									textDecor={"underline"}
 									color={"black"}
 									marginTop={4}
-									>
+								>
 									AWS Certified Cloud Practitioner
 								</Button>
 							</Link>
@@ -114,7 +120,8 @@ export default function Home() {
 									variant="outline"
 									colorScheme="blue"
 									_hover={{ bgColor: "blue", color: "white" }}
-									leftIcon={<Icon as={IoLogoGithub} />}>
+									leftIcon={<Icon as={IoLogoGithub} />}
+								>
 									@Vince
 								</Button>
 							</Link>
@@ -126,7 +133,8 @@ export default function Home() {
 									colorScheme="blue"
 									marginTop={2}
 									_hover={{ bgColor: "blue", color: "white" }}
-									leftIcon={<Icon as={IoLogoLinkedin} />}>
+									leftIcon={<Icon as={IoLogoLinkedin} />}
+								>
 									@Vince-Loh
 								</Button>
 							</Link>
@@ -138,7 +146,8 @@ export default function Home() {
 									colorScheme="blue"
 									marginTop={2}
 									_hover={{ bgColor: "blue", color: "white" }}
-									leftIcon={<Icon as={AiTwotoneMail} />}>
+									leftIcon={<Icon as={AiTwotoneMail} />}
+								>
 									@vince.lohys@gmail.com
 								</Button>
 							</Link>
