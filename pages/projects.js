@@ -23,6 +23,16 @@ const passionProjects = [
 		padding: "1rem",
 	},
 	{
+		id: "portfolio",
+		title: "Portfolio",
+		thumbnail: portfolio,
+		description:
+			"A dynamic portfolio built with React.js, showcasing projects, resume, and experiences. Features include responsive design, smooth scrolling, and a blog.  Hosted on AWS (S3, CloudFront), with a CI/CD pipeline using CodePipeline and CodeBuild, ensuring automated deployment from GitHub.",
+		delay: 0.1,
+		backgroundColor: "white",
+		padding: "1rem",
+	},
+	{
 		id: "suburbsolution",
 		title: "Suburb Solutions",
 		thumbnail: suburbsolutions,

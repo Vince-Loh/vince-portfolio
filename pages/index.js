@@ -22,6 +22,7 @@ import archery from "../public/images/works/archery_score.png";
 import suburbsolution from "../public/images/works/suburbsolutions.png";
 import dtpHome from "../public/images/works/dtp_home.png";
 import proproo from "../public/images/works/proproo_home.png";
+import portfolio from "../public/images/works/portfolio_home.png";
 
 export default function Home() {
 	return (
@@ -32,12 +33,8 @@ export default function Home() {
 						About me
 					</Heading>
 					<Paragraph>
-						Vince is a student at Swinburne University of Technology in Melbourne, studying Bachelor of Computer Science and
-						majoring in Software Development. He is a software developer with a
-						passion for building things that look and feel good. He enjoys
-						learning new technologies and has a knack for solving real life
-						problems with code. When he is not coding, he loves gaming,
-						watching videos on programming or tinkering with computers.
+				I'm Vince, a Computer Science student at Swinburne University of Technology in Melbourne with a focus on Software Development. I have a passion for building software that not only works flawlessly but also offers a great user experience. I love exploring new technologies and tackling real-world challenges with creative code solutions.
+				Whether I’m developing a new project, debugging a tricky issue, or even tinkering with computers in my spare time, I’m always eager to learn and grow as a developer. Gaming, tech videos, and experimenting with innovative ideas are some of the ways I unwind and stay inspired.
 					</Paragraph>
 					<Box align="center" my={4}>
 						<NextLink href="/resume">
@@ -66,8 +63,9 @@ export default function Home() {
 						>
 							Sophiscated and user-centric solutions that provides real estate data and analytics in Australia
 						</WorkGridItem>
-						<WorkGridItem id="dtp" title="Decentralized Trading Platform" thumbnail={dtpHome}>
-							The Decentralized Trading Platform for user transactions
+						<WorkGridItem id="portfolio" title="Portfolio" thumbnail={portfolio}>
+						A dynamic portfolio built with React.js, showcasing projects, resume, and experiences. Features include responsive design, smooth scrolling, and a blog.
+        				Hosted on AWS (S3, CloudFront), with a CI/CD pipeline using CodePipeline and CodeBuild, ensuring automated deployment from GitHub.
 						</WorkGridItem>
 						<WorkGridItem id="proproo" thumbnail={proproo} title="Proproo Property Website">
 							Proproo&apos;s website is one of the biggest project that I personally have ever done myself especially for the database, backend and frontend.
@@ -128,7 +126,7 @@ export default function Home() {
 							</Link>
 						</ListItem>
 						<ListItem>
-							<Link href="https://www.linkedin.com/in/vince-loh-10146a1a2/" target="_blank">
+							<Link href="https://www.linkedin.com/in/vince-loh-3820a3315/" target="_blank">
 								<Button
 									variant="outline"
 									colorScheme="blue"

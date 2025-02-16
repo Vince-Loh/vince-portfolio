@@ -6,6 +6,7 @@ import { WorkGridItem } from "../GridItem";
 import suburbsolution from "../../public/images/works/suburbsolutions.png";
 import dtpHome from "../../public/images/works/dtp_home.png";
 import archery from "../../public/images/works/archery_rounds.png";
+import portfolio from "../../public/images/works/portfolio_home.png";
 
 export default function FeaturedProjects() {
 	return (
@@ -22,11 +23,12 @@ export default function FeaturedProjects() {
 					Sophiscated and user-centric solutions that provides real estate data and analytics in Australia
 				</WorkGridItem>
 				<WorkGridItem
-					id="dtp"
-					title="Decentralized Trading Platform"
-					thumbnail={dtpHome}>
+					id="portfolio"
+					title="Portfolio"
+					thumbnail={portfolio}>
 
-					The Decentralized Trading Platform for user transactions
+A dynamic portfolio built with React.js, showcasing projects, resume, and experiences. Features include responsive design, smooth scrolling, and a blog.
+Hosted on AWS (S3, CloudFront), with a CI/CD pipeline using CodePipeline and CodeBuild, ensuring automated deployment from GitHub.
 				</WorkGridItem>
 				<WorkGridItem 							
 					id="archery"
