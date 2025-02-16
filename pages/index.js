@@ -70,7 +70,7 @@ export default function Home() {
 							The Decentralized Trading Platform for user transactions
 						</WorkGridItem>
 						<WorkGridItem id="proproo" thumbnail={proproo} title="Proproo Property Website">
-							Proproo&apos;s website is the one of the biggest project that I personally have ever done myself especially for the database, backend and frontend.
+							Proproo&apos;s website is one of the biggest project that I personally have ever done myself especially for the database, backend and frontend.
 						</WorkGridItem>
 					</SimpleGrid>
 					<Box align="center" my={4}>
@@ -95,6 +95,7 @@ export default function Home() {
 								width={80}
 								height={80}
 							/>
+							<br></br>
 							<Link href="" target="_blank">
 								<Button
 									variant="link"

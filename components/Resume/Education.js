@@ -11,7 +11,7 @@ const EducationDetails = [
 		location: "Melbourne, Australia",
 		roles: [
 			{
-				subtitle: "Bachelor of Computer Science)",
+				subtitle: "Bachelor of Computer Science",
 				date: "Feb 2022 - Jun 2024",
 				description: [
 					"Relevant course work: Object-Oriented Programming, Interface Design and Development, Data structures and algorithms, Database Analysis and Design, Networks and Switching, Developing Technical Software, Software Development for Mobile Development, Computer Systems",
