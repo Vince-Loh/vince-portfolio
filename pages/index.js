@@ -20,6 +20,7 @@ import Section from "../components/Section";
 import archery from "../public/images/works/archery_score.png";
 import suburbsolution from "../public/images/works/suburbsolutions.png";
 import dtpHome from "../public/images/works/dtp_home.png";
+import proproo from "../public/images/works/proproo_home.png";
 
 export default function Home() {
 	return (
@@ -66,11 +67,10 @@ export default function Home() {
 							The Decentralized Trading Platform for user transactions
 						</WorkGridItem>
 						<WorkGridItem
-							id="archery"
-							thumbnail={archery}
-							title="Archery Scoring">
-							Streamline scoring processes, maintain accurate records, and gain
-							valuable insights into archer performance.
+							id="proproo"
+							thumbnail={proproo}
+							title="Proproo Property Website">
+							Proproo's website is the one of the biggest project that I personally have ever done myself especially for the database, backend and frontend.
 						</WorkGridItem>
 					</SimpleGrid>
 					<Box align="center" my={4}>
