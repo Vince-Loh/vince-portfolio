@@ -13,10 +13,10 @@
 			"description": "Decentralized Trading Platform for user transactions"
 		},
 		{
-			"id": "archery",
-			"title": "Archery Scoring System",
-			"thumbnail": "path/to/Archery_DB",
-			"description": "Streamline scoring processes, maintain accurate records, and gain valuable insights into archer performance."
+			"id": "proproo",
+			"title": "Proproo - Property Listing Platform",
+			"thumbnail": "path/to/proproo",
+			"description": "Proproo's website is the one of the biggest project that I personally have ever done myself especially for the database, backend and frontend"
 		}
 
 	]
