@@ -12,7 +12,7 @@ import {
   import P from "../../components/Paragraph";
   import Layout from "../../components/layouts/Articles";
   
-  const Work = () => (
+  const Portfolio = () => (
     <Layout title="Portfolio Website">
       <Box>
         <Title>
@@ -55,5 +55,4 @@ import {
     </Layout>
   );
   
-  export default Work;
-  
+  export default Portfolio;
