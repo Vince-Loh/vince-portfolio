@@ -1,4 +1,4 @@
-import { Box, Heading, Link } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import React from "react";
 import {
 	AutoCoachTech,
@@ -6,23 +6,23 @@ import {
 	GreatEastTest,
 	TechJK,
 	HealthCare,
-	FacilitiesTech  // new icon for facilities management
+	FacilitiesTech  // Use this as a placeholder; swap if needed
 } from "./Icons";
 import ResumeDetail from "./ResumeDetail";
 
 const WorkDetails = [
   {
-    title: "Focused Facilities Management Pty Ltd",
-    location: "Aurora, Melbourne",
+    title: "AdiraTec Pty Ltd",
+    location: "Melbourne, Australia",
     roles: [
       {
-        subtitle: "Building Concierge - Part Time",
-        date: "June 2024 - 28 Feb 2025",
+        subtitle: "Front End & Web Content Developer - Contract",
+        date: "June 2024 – January 2025",
         description: [
-          "Manage front-desk operations and provide excellent customer service to tenants and visitors",
-          "Coordinate maintenance and liaise with contractors to promptly resolve building issues",
-          "Ensure security protocols are followed and assist with access control",
-          "Foster positive communication between tenants and management"
+          "Collaborated with the AdiraTec team to design and develop a responsive company website",
+          "Implemented dynamic features like interactive service pages and contact forms",
+          "Updated content to reflect core values and sustainability goals",
+          "Optimized website performance with AWS hosting for scalability and a seamless client experience"
         ]
       }
     ],
@@ -33,12 +33,12 @@ const WorkDetails = [
     location: "Remote",
     roles: [
       {
-        subtitle: "Developer/Designer",
+        subtitle: "MERN Stack Developer",
         date: "Nov. 2023 – Oct. 2024",
         description: [
-          "Developed diabetes management hardware and software, including user testing and prototyping",
-          "Designed a 3D model integrating blood glucose monitoring and alarms, synced with a mobile app",
-          "Collaborated with industry partners such as AWS, Reece Group, and LaunchVic to refine business strategies and tech solutions"
+          "Developed a full-stack diabetes management solution using the MERN stack",
+          "Integrated MongoDB, Express.js, Node.js, and React to build a responsive user interface",
+          "Collaborated with AWS and healthcare partners like Reece Group and LaunchVic to prototype, test, and deploy scalable tech solutions"
         ]
       }
     ],
@@ -46,7 +46,7 @@ const WorkDetails = [
   },
   {
     title: "Autocoach Pty Ltd",
-    location: "On-site, Melbourne",
+    location: "Melbourne, Australia",
     roles: [
       {
         subtitle: "Region Technical Specialist - Internship",
@@ -54,9 +54,8 @@ const WorkDetails = [
         description: [
           "Addressed technical issues for customers in South East Asia",
           "Provided detailed reports to the development team and offered technical support for Autocoach Sports software",
-          "Participated in system integration and testing",
-          "Collaborated with the team to identify and resolve bugs",
-          "Worked with Ang Peng Siong, Singapore’s Swimming National Head Coach, on device updates and patches"
+          "Participated in system integration and testing, collaborating with the team to identify and resolve bugs",
+          "Worked with Ang Peng Siong, Singapore’s Swimming National Head Coach on device updates and patches"
         ]
       }
     ],
@@ -64,7 +63,7 @@ const WorkDetails = [
   },
   {
     title: "Swinburne University of Technology",
-    location: "On-site, Melbourne",
+    location: "Melbourne, Australia",
     roles: [
       {
         subtitle: "Vintage Computer Technician - Internship",
@@ -80,22 +79,6 @@ const WorkDetails = [
     tech: <SwinnyTech />
   },
   {
-    title: "MinMed Clinic",
-    location: "Singapore",
-    roles: [
-      {
-        subtitle: "Healthcare Assistant",
-        date: "June 2021 - May 2022",
-        description: [
-          "Assisted in swabbing patients for Covid-19 during travel restrictions in Singapore",
-          "Performed swab tests and activated isolation and evacuation procedures as needed",
-          "Contributed to the healthcare team during a critical period of the pandemic"
-        ]
-      }
-    ],
-    tech: <HealthCare />
-  },
-  {
     title: "JK Technology",
     location: "Singapore",
     roles: [
@@ -103,11 +86,9 @@ const WorkDetails = [
         subtitle: "Technical Specialist",
         date: "Nov. 2020 – June 2021",
         description: [
-          "Serviced approximately 20,000 computers",
-          "Managed desktop tech refresh and data migration",
-          "Imaged desktops and laptops, and performed hardware and software troubleshooting",
-          "Applied OS and application patches and updates",
-          "Supported banking clients like OCBC Bank and Great Eastern in Fintech solutions"
+          "Serviced approximately 20,000 computers and managed desktop tech refresh and data migration",
+          "Imaged desktops and laptops, performed hardware/software troubleshooting, and applied OS and application patches",
+          "Supported banking clients like OCBC Bank and Great Eastern with Fintech solutions"
         ]
       }
     ],
@@ -122,10 +103,9 @@ const WorkDetails = [
         date: "March 2020 – November 2020",
         description: [
           "Performed user acceptance testing for product launches and enhancements",
-          "Documented testing artifacts and prepared test data",
-          "Monitored testing progress, logged defects, and ensured timely closure of the testing process",
-          "Provided post-implementation support and assisted in creating training documentation",
-          "Managed business and regulatory compliance risks by staying updated on industry trends"
+          "Documented testing artifacts, prepared test data, monitored progress, and logged defects",
+          "Ensured timely closure of testing processes and provided post-implementation support",
+          "Assisted in creating training documentation and managed business/regulatory compliance risks"
         ]
       }
     ],
